@@ -35,11 +35,11 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Some Name',  // можно менять
+        name: 'Ivan',  // можно менять
     },
     message: {
-        text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
-        time: '22:00', // можно менять
+        text: 'Hello, she didn’t do anything and rested all day, how are you?', // можно менять
+        time: '09:01', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
@@ -62,11 +62,11 @@ const HW1 = () => {
                 {/*проверка отображения (не менять)*/}
                 <div>
                     <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
+                    {/* <FriendMessage message={friendMessage0} /> */}
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
+                {/* <MessageSender M={Message} /> */}
             </div>
         </div>
     )

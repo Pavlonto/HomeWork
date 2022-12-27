@@ -1,31 +1,49 @@
 .message {
-
+    max-width: 1000px;
+    margin: 24px auto 0 auto;
 }
 
-.imageAndText {
-
-}
+.imageAndText {}
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    position: relative;
+    top: 15px;
 }
 
 .text {
-
+    display: inline-block;
+    background-color: #0066CC;
+    padding: 10px;
+    color: #fff;
+    margin-left: 5px;
+    border-radius: 10px;
+    position: relative;
 }
 
-.text:after {
-
+.text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -10px;    
+    border: 10px solid transparent;
+    border-left: 10px solid #0066CC;
+    border-bottom: 10px solid #0066CC;
+    display: block;
+    rotate: -90deg;
 }
 
 .name {
-
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .messageText {
-
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .time {
-
+    font-size: 10px;
 }

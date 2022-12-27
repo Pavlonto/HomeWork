@@ -1,11 +1,16 @@
 .App {
+    margin-top: 130px;
     --header_height: 60px;
+    font-family: Montserrat;
 }
 
 .hw {
-
+    border-top: 1px solid #D9D9D9;
 }
 
 .hwTitle {
-
+    max-width: 1000px;
+    margin: 0px auto 10px auto;
+    font-weight: 600;
+    font-size: 22px;
 }
