@@ -1,6 +1,6 @@
 .friendMessage {
     max-width: 1000px;
-    margin: 24px auto 0 auto;
+    margin: 30px auto 0 auto;
 }
 
 .friendImageAndText {
@@ -47,4 +47,5 @@
 
 .friendTime {
     font-size: 10px;
+    margin: 5px 0 0 10px;
 }
