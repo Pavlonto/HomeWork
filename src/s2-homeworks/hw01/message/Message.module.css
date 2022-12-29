@@ -17,6 +17,7 @@
     top: 15px;
     order: 3;
     margin-left: 10px;
+    border-radius: 50%;
 }
 
 .text {
@@ -49,6 +50,8 @@
 .messageText {
     font-weight: 400;
     font-size: 16px;
+    max-width: 700px;
+    white-space: normal;
 }
 
 .time {
