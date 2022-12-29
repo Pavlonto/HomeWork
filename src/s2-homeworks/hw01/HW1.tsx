@@ -34,23 +34,23 @@ type TextType = {
 export const message0: MessageType = {
     id: 0,
     user: {
-        avatar: 'https://tr.web.img4.acsta.net/c_300_300/medias/nmedia/18/66/95/87/19099747.jpg', // можно менять
-        name: 'Надежда Гончарова',  // можно менять
+        avatar: avatar, // можно менять
+        name: 'Some Name',  // можно менять
     },
     message: {
-        text: 'Ой, а может забить на этот ебаный проект?', // можно менять
-        time: '11:59', // можно менять
+        text: 'Some text', // можно менять
+        time: '09:01', // можно менять
     },
 }
 export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Павел Пекарский', // можно менять
+        name: 'Some Name', // можно менять
     },
     message: {
-        text: 'Если ты думаешь что я один раз напомнил утром и всё, то это фатальная ошибка. За безделие побить не побью, но укусить укушу.', // можно менять
-        time: '12:15', // можно менять
+        text: 'Some text', // можно менять
+        time: '09:00', // можно менять
     },
 }
 
