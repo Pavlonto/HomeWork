@@ -9,7 +9,7 @@ type GreetingPropsType = {
     onEnter: (e: KeyboardEvent<HTMLInputElement>) => void
     error: string
     totalUsers: number
-    lastUserName?: string
+    lastUserName?: any
 }
 
 // презентационная компонента (для верстальщика)
