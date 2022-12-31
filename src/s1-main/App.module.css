@@ -7,6 +7,9 @@
 .hw {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 0px auto 10px auto;
+    padding: 35px 0 135px 0;
     border-top: 1px solid #D9D9D9;
     border-bottom: 1px solid #D9D9D9;
 }
