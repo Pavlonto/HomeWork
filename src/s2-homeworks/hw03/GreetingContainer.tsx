@@ -66,7 +66,12 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
-        pureOnEnter(e, addUser)
+        if (e.currentTarget.value !== '') {
+            pureOnEnter(e, addUser)
+        } else {
+            setError('Invalid value')
+        }
+        
     }
 
     const totalUsers = users.length
