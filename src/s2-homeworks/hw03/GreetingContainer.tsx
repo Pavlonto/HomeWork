@@ -13,21 +13,16 @@ export const pureAddUser = (
     setName: (name: string) => void,
     addUserCallback: (name: string) => void
 ) => {
-    name === '' ?
-        setError('error')
-        :
+    if (name === '') {
+        setError('Ошибка, введите имя!')
+    } else {
         addUserCallback(name)
-    setName('')
-    // if (name === '') {
-    //     setError('error')
-    // } else {
-    //     addUserCallback(name)
-    //     setName('')
-    // }
+        setName('')
+    }
 }
 
-export const pureOnBlur = (name: string, setError: (error: string) => void) => {    
-    setError('Enter value')    
+export const pureOnBlur = (name: string, setError: (error: string) => void) => {
+    setError('Enter value')
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
@@ -54,9 +49,10 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
             error && setError('')
         } else {
             name && setName('')
-            setError('Enter value')
+            setError('Ошибка, введите имя!')
         }
     }
+    
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
     }
@@ -69,9 +65,9 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
         if (e.currentTarget.value !== '') {
             pureOnEnter(e, addUser)
         } else {
-            setError('Invalid value')
+            setError('Ошибка, введите имя!')
         }
-        
+
     }
 
     const totalUsers = users.length
