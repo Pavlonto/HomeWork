@@ -22,7 +22,9 @@ export const pureAddUser = (
 }
 
 export const pureOnBlur = (name: string, setError: (error: string) => void) => {
-    setError('Enter value')
+    if (name === '') {
+        setError('Введите значение')
+    }    
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
